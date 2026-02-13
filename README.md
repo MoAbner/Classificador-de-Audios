@@ -37,7 +37,7 @@ O projeto utiliza uma combinação de processamento de áudio e visão computaci
 * **Ambiente:** Google Colab (Python 3)
 * **IA/DL:** TensorFlow / Keras
 * **Áudio:** Librosa
-* **Gráficos:** Matplotlib & Seaborn
+* **Gráficos:** Matplotlib
 * **Dados:** NumPy & Scikit-learn
 
 ---
