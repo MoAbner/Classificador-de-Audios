@@ -47,8 +47,9 @@ O projeto utiliza uma combinação de processamento de áudio e visão computaci
 Para rodar este notebook no Google Colab e testar com seus próprios áudios, siga estas etapas:
 
 ### 1. Preparação do Dataset
-Baixe a pasta Dataset disponibilizada nesse repositório. A pasta Dataset contem arquivos `.wav` com áudios que eu gravei para usar de amostragem para o treinamento
-[Dataset](https://github.com/MoAbner/Classificador-de-Audios/tree/main/Dataset)
+Baixe a pasta Dataset disponibilizada nesse repositório. A pasta Dataset contem arquivos `.wav` com áudios que eu gravei para usar de amostragem para o treinamento.
+[Dataset.zip](https://github.com/user-attachments/files/25315044/Dataset.zip)
+
 
 ### 2. Upload para o Google Drive
 Faça o upload da pasta `Dataset` para a raiz do seu **Google Drive**. Isso garante que os arquivos não sejam apagados ao fechar a sessão do Colab.
