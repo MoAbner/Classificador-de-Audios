@@ -42,15 +42,38 @@ O projeto utiliza uma combinação de processamento de áudio e visão computaci
 
 ---
 
-## Como Rodar no Colab
+## Como Executar o Projeto
 
-1. Clique no botão **"Open In Colab"** no topo deste arquivo.
-2. No menu do Colab, vá em **Ambiente de execução > Alterar tipo de ambiente** e selecione **T4 GPU** para um processamento mais rápido.
-3. Execute as células sequencialmente (`Shift + Enter`).
-4. Na seção de teste, faça o upload de um arquivo de áudio para ver a classificação.
+Para rodar este notebook no Google Colab e testar com seus próprios áudios, siga estas etapas:
 
----
+### 1. Preparação do Dataset
+Baixe a pasta Dataset disponibilizada nesse repositório. A pasta dataset contem arquivos `.wav` com áudios que eu gravei para usar de amostragem para o treinamento
 
+### 2. Upload para o Google Drive
+Faça o upload da pasta `Dataset` para a raiz do seu **Google Drive**. Isso garante que os arquivos não sejam apagados ao fechar a sessão do Colab.
+
+### 3. Configuração no Colab
+Ao abrir o notebook, execute a célula de configuração inicial:
+1. Clique no ícone de **Pasta** na barra lateral esquerda.
+2. Clique no botão **"Montar Drive"** (ícone de pasta com o logo do Drive).
+3. Siga as instruções na tela para permitir o acesso.
+
+### 4. Ajuste de Caminhos
+No código, certifique-se de que a variável de caminho aponta para o local correto no seu Drive:
+```python
+PATH_DATASET = '/content/drive/MyDrive/Dataset/Audios'
+--- 
+```
+ ### 5. Analise de seus Áudios (Ligar, Desligar ou Abrir) 
+ Se quiser analisar algum áudio diferente dos que estão na pasta testes basta fazer o upload do arquivo do áudio em `.wav` na pasta Testes, Copie seu caminho e coloque dentro dos parametros que chama a função na seção de testes.
+ Se ao gravar seu arquivo é de um formato diferente de `.wav`, Siga esses passos:
+ 1. Converta ele para `.wav`, Existem sites que convertem gratuitamente, eu recomendo o HappyScribe: https://www.happyscribe.com/pt
+ 2. Adicione seu arquivo em `.wav` na pasta de testes
+ 3. Copie seu caminho, e coloque dentro dos parametros que chama a função na seção de testes
+
+ ### 6. Rodando o código no Colab
+ Execute as células sequencialmente (`Shift + Enter`).
+ 
 ## Estrutura de Pastas (Ambiente Colab)
 ```
 /content/ 
